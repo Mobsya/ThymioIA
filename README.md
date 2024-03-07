@@ -1,30 +1,85 @@
-# React + TypeScript + Vite
+# ThymioIA React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that integrates with TensorFlow.js and Thymio robots for interactive AI learning and control. It uses Vite as a build tool for a fast development experience.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have installed the following on your system:
 
-## Expanding the ESLint configuration
+- Node.js (v18.18.2 or newer)
+- yarn (1.22.21 or newer)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To set up the project, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/Mobsya/ThymioIA.git
+cd thymioia
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Install dependencies:**
+using Yarn:
+
+```bash
+yarn
+```
+
+3. **Running the Development Server:**
+
+To start the development server with hot module replacement (HMR) enabled:
+
+with Yarn:
+
+```bash
+yarn dev
+```
+
+This will start the Vite development server and you can view your application at `http://localhost:3000`.
+
+4. **Building for Production:**
+
+To build the application for production deployment:
+
+with Yarn:
+
+```bash
+yarn build
+```
+
+This will generate a `dist` folder in your project directory with optimized assets for deployment.
+
+## Using ESLint and Prettier
+
+The project is configured with ESLint for linting and Prettier for code formatting. You can run the linter with:
+
+```bash
+npm run lint
+```
+
+Or format your code with Prettier:
+
+```bash
+npm run format
+```
+
+## Committing Changes
+
+This project uses Commitizen for structured commit messages. To make a commit:
+
+```bash
+yarn commit
+```
+
+Follow the prompts to complete your commit message.
+
+## Additional Configuration
+
+For further customization and advanced configurations, refer to the official Vite documentation at [https://vitejs.dev](https://vitejs.dev) and the React documentation at [https://reactjs.org](https://reactjs.org).
+
+## Contributing
+
+Contributions to this project are welcome! Please refer to the contributing guidelines for more details.
+
